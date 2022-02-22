@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import Lottery from './components/Lottery.vue'
-import Gift from './components/Gift.vue'
+import Lottery from './components/Lottery.vue';
+import Gift from './components/Gift.vue';
 import { GLOBAL_KEYS } from './gift.setting.js';
 export default {
   name: 'App',
@@ -15,7 +15,7 @@ export default {
   data() {
     return {
       isShowGift: false,
-    }
+    };
   },
 
   methods: {
@@ -30,7 +30,7 @@ export default {
       this.isShowGift = true;
     },
   },
-  
+
   created() {
     this.checkLocalGift();
   },
@@ -41,7 +41,7 @@ export default {
 
 <style>
 .app {
-  font-family: Muyao, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Noto Sans SC, Avenir, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -58,6 +58,4 @@ export default {
   width: 100vw;
   height: 100vh;
 }
-
-
 </style>

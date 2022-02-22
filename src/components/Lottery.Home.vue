@@ -1,17 +1,17 @@
 <template>
   <div class="lottery-home-component full-screen">
-    <img class="cloud" src="../assets/images/cloud.png" alt="">
-    <img src="../assets/images/bird.png" alt="" class="bird">
-    <img src="../assets/images/star-1.png" alt="" class="star">
-    <img src="../assets/images/star-2.png" alt="" class="star second">
-    <img class="heart" src="../assets/images/love-heart.png" alt="">
+    <img class="cloud" src="../assets/images/cloud.png" alt="" />
+    <img src="../assets/images/bird.png" alt="" class="bird" />
+    <img src="../assets/images/star-1.png" alt="" class="star" />
+    <img src="../assets/images/star-2.png" alt="" class="star second" />
+    <img class="heart" src="../assets/images/love-heart.png" alt="" />
     <div class="main">
       <h1 class="title">{{ title }}</h1>
       <p class="message" v-for="message in messages" :key="message.key">{{ message.wording }}</p>
     </div>
     <div class="footer">
       <span>©️本活动最终解释权归</span>
-      <span> {{ owner }} </span>
+      <span>{{ owner }}</span>
       <span>所有</span>
     </div>
   </div>
@@ -26,7 +26,7 @@ export default {
       title: '',
       messages: [],
       owner: '',
-    }
+    };
   },
 
   methods: {
@@ -42,7 +42,7 @@ export default {
   created() {
     this.initConfig();
   },
-}
+};
 </script>
 
 <style scoped>
@@ -95,7 +95,7 @@ export default {
   color: #909399;
   position: absolute;
   text-align: center;
-  bottom: 8px;
+  bottom: 20px;
   width: 100%;
 }
 </style>
